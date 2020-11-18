@@ -3681,9 +3681,9 @@
     "restore": {
       "projectUniqueName": "CapturaCaptcha",
       "projectName": "CapturaCaptcha",
-      "projectPath": "C:\\Users\\User\\Documents\\UiPath\\CapturaCaptcha\\.local",
+      "projectPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\CapturaCaptcha\\.local",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\UiPath\\CapturaCaptcha\\.local"
+      "outputPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\CapturaCaptcha\\.local"
     },
     "frameworks": {
       "net461": {

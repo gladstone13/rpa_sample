@@ -2944,9 +2944,9 @@
     "restore": {
       "projectUniqueName": "Performer",
       "projectName": "Performer",
-      "projectPath": "C:\\Users\\User\\Documents\\UiPath\\Performer\\.local",
+      "projectPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\Performer\\.local",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\UiPath\\Performer\\.local"
+      "outputPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\Performer\\.local"
     },
     "frameworks": {
       "net461": {
