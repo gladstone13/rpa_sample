@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1361,3434" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1239,3669" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="34">
+    <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -35,6 +35,8 @@
       <x:String>UiPath.Web</x:String>
       <x:String>UiPath.Web.Activities</x:String>
       <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -73,31 +75,31 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="991,3369" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="552,3604" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="949,3277" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://www.aneel.gov.br/">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510,3512" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="http://www.aneel.gov.br/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="915,3176" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,3411" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Agência'" sap:VirtualizedContainerService.HintSize="873,3084" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e51578bce6142d7e8483d3f4becee7f0" Selector="&lt;html app='chrome.exe' title='Agência Nacional de Energia Elétrica - ANEEL' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Agência'" sap:VirtualizedContainerService.HintSize="434,3319" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e51578bce6142d7e8483d3f4becee7f0" Selector="&lt;html app='chrome.exe' title='Agência Nacional de Energia Elétrica - ANEEL' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="839,2938" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,3173" sap2010:WorkflowViewState.IdRef="Sequence_1">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="ui:Image" Name="imgCaptcha" />
                       <Variable x:TypeArguments="x:String" Name="strKey" />
@@ -113,14 +115,22 @@
                       <Variable x:TypeArguments="x:String" Name="strLogin" />
                       <Variable x:TypeArguments="x:String" Name="requestId" />
                       <Variable x:TypeArguments="s:String[]" Name="arrResult" />
+                      <Variable x:TypeArguments="x:String" Name="strCaptchaResolution" />
+                      <Variable x:TypeArguments="x:String" Name="strProtocoloParte1" />
+                      <Variable x:TypeArguments="x:String" Name="strProtocoloParte2" />
+                      <Variable x:TypeArguments="x:String" Name="strProtocoloParte3" />
+                      <Variable x:TypeArguments="ui:Image" Name="imgCaptchaLogin" />
+                      <Variable x:TypeArguments="ui:Image" Name="imgCaptchaPesquisa" />
+                      <Variable x:TypeArguments="x:String" Name="strBodyPesquisa" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="dtDadosProcesso" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="797,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://www.aneel.gov.br/consulta-processual" />
-                    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'IMG  _58_captcha'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[imgCaptcha]">
+                    <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://www.aneel.gov.br/consulta-processual" />
+                    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'IMG  _58_captcha'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[imgCaptchaLogin]">
                       <ui:TakeScreenshot.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c96b2a6c-2f6c-42b2-a8df-0b9ed2eb2a70" InformativeScreenshot="756b1336b83c1220230a20f1763c8ed1" Selector="&lt;webctrl id='_58_captcha' tag='IMG' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -132,8 +142,37 @@
                         </ui:Target>
                       </ui:TakeScreenshot.Target>
                     </ui:TakeScreenshot>
-                    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="aneel_login" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPassword]" Username="[strLogin]" />
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  _58_login'" EmptyField="True" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[strLogin]">
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strBody]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[imgCaptchaLogin.Base64]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File - 2CaptchaAsset" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Data\Assets\2CaptchaAsset.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_strPassword">
+                          <mva:VisualBasicReference x:TypeArguments="ss:SecureString" ExpressionText="strPassword" />
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strLogin">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strLogin" />
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strUrlPost">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strUrlPost" />
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strUrlGet">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strUrlGet" />
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strAuthenticationKey">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strKey" />
+                        </OutArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strMethod">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strMethod" />
+                        </OutArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  _58_login'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[strLogin]">
                       <ui:TypeInto.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60a33644-8d88-4793-bd1b-f0d92388e6f4" InformativeScreenshot="c8d91b4b33bdd2cd616997af3ca1116c" Selector="&lt;html app='chrome.exe' title='Consulta Processual - ANEEL' /&gt;&lt;webctrl id='_58_login' tag='INPUT' type='text' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -145,7 +184,7 @@
                         </ui:Target>
                       </ui:TypeInto.Target>
                     </ui:TypeInto>
-                    <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  _58_password'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[strPassword]">
+                    <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'INPUT  _58_password'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[strPassword]">
                       <ui:TypeSecureText.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3449282f-b031-4f3a-a009-88ef4c8c4d74" InformativeScreenshot="98b0252e64c87b5e3409afc52735f639" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -157,241 +196,242 @@
                         </ui:Target>
                       </ui:TypeSecureText.Target>
                     </ui:TypeSecureText>
-                    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="2captcha_post" DisplayName="Get Asset - 2captcha_post" sap:VirtualizedContainerService.HintSize="797,51" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
-                      <ui:GetRobotAsset.Value>
-                        <OutArgument x:TypeArguments="x:String">[strUrlPost]</OutArgument>
-                      </ui:GetRobotAsset.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:GetRobotAsset>
-                    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="2captcha_get" DisplayName="Get Asset - 2captcha_get" sap:VirtualizedContainerService.HintSize="797,51" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
-                      <ui:GetRobotAsset.Value>
-                        <OutArgument x:TypeArguments="x:String">[strUrlGet]</OutArgument>
-                      </ui:GetRobotAsset.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:GetRobotAsset>
-                    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="2captcha_api_key" DisplayName="Get Asset - 2captcha_api_key" sap:VirtualizedContainerService.HintSize="797,51" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3">
-                      <ui:GetRobotAsset.Value>
-                        <OutArgument x:TypeArguments="x:String">[strKey]</OutArgument>
-                      </ui:GetRobotAsset.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:GetRobotAsset>
-                    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="2captcha_method" DisplayName="Get Asset - 2captcha_method" sap:VirtualizedContainerService.HintSize="797,51" sap2010:WorkflowViewState.IdRef="GetRobotAsset_4">
-                      <ui:GetRobotAsset.Value>
-                        <OutArgument x:TypeArguments="x:String">[strMethod]</OutArgument>
-                      </ui:GetRobotAsset.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:GetRobotAsset>
-                    <Assign sap:VirtualizedContainerService.HintSize="797,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Data\Http\2Captcha\2CaptchaHttp.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strKey">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strKey" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strMethod">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strMethod" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strBody">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBody" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strUrlPost">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strUrlPost" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strUrlGet">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strUrlGet" />
+                        </InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strCaptchaResolution">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCaptchaResolution" />
+                        </OutArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  _58_captchaText'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[strCaptchaResolution]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c93ad2ab-af66-470f-8da2-0a53058bde3c" InformativeScreenshot="3913ee4cc3f7d5864ed2ead19063e6a4" Selector="&lt;webctrl id='_58_captchaText' tag='INPUT' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0dc076b2-b6f9-4e92-9a10-dc495e4c74e7" InformativeScreenshot="1e2a78fc31b60514c47fca55f464d854" Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4893e17a-3180-4091-a00e-c160cb37997d" InformativeScreenshot="21164a6900de04fe4078082c02e9620d" Selector="&lt;webctrl parentid='p_p_id_56_INSTANCE_1TN8LN4zHcvE_' tag='IMG' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_11">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[strBody]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[strProtocoloParte1]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[imgCaptcha.Base64]</InArgument>
+                        <InArgument x:TypeArguments="x:String">48500</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="797,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_12">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[jsonBody]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[strProtocoloParte2]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">["{ ""key"": """ &amp; strKey &amp; """, ""method"": """ &amp; strMethod &amp; """, ""body"": """ &amp; strBody &amp; """ }"]</InArgument>
+                        <InArgument x:TypeArguments="x:String">006113</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[jsonBody]" BodyFormat="application/json" DisplayName="HTTP Request" EndPoint="[strUrlPost]" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[strResult]" StatusCode="[strStatusCodeResult]" TimeoutMS="6000">
-                      <ui:HttpClient.Attachments>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Attachments>
-                      <ui:HttpClient.Cookies>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Cookies>
-                      <ui:HttpClient.Headers>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Headers>
-                      <ui:HttpClient.Parameters>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Parameters>
-                      <ui:HttpClient.UrlSegments>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.UrlSegments>
-                    </ui:HttpClient>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="797,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;Codigo Retorno: &quot; &amp; strStatusCodeResult]" />
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="797,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;Result: &quot; &amp; strResult]" />
-                    <If Condition="[strStatusCodeResult=200]" sap:VirtualizedContainerService.HintSize="797,1391" sap2010:WorkflowViewState.IdRef="If_1">
-                      <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,1244" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                          <Sequence.Variables>
-                            <Variable x:TypeArguments="x:String" Name="strIdResult" />
-                            <Variable x:TypeArguments="x:String" Name="strGetResult" />
-                            <Variable x:TypeArguments="x:Int32" Name="strGetResultCode" />
-                            <Variable x:TypeArguments="s:String[]" Name="arrGetResult" />
-                            <Variable x:TypeArguments="x:String" Name="strGetIdResult" />
-                          </Sequence.Variables>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_7">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="s:String[]">[arrResult]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="s:String[]">[Split(strResult, "|")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_8">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strIdResult]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[arrResult(1)]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Delay Duration="00:00:30" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                          <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" DisplayName="HTTP Request" EndPoint="[strUrlGet]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[strGetResult]" StatusCode="[strGetResultCode]" TimeoutMS="6000">
-                            <ui:HttpClient.Attachments>
-                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                            </ui:HttpClient.Attachments>
-                            <ui:HttpClient.Cookies>
-                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                            </ui:HttpClient.Cookies>
-                            <ui:HttpClient.Headers>
-                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                            </ui:HttpClient.Headers>
-                            <ui:HttpClient.Parameters>
-                              <InArgument x:TypeArguments="x:String" x:Key="key">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strKey" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="action">
-                                <Literal x:TypeArguments="x:String">get</Literal>
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="id">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strIdResult" />
-                              </InArgument>
-                            </ui:HttpClient.Parameters>
-                            <ui:HttpClient.UrlSegments>
-                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                            </ui:HttpClient.UrlSegments>
-                          </ui:HttpClient>
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;Código Retorno Get &quot; &amp; strGetResultCode.ToString]" />
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;Retorno Get&quot; &amp; strGetResult.ToString]" />
-                          <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_9">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="s:String[]">[arrGetResult]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="s:String[]">[Split(strGetResult, "|")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_10">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[strGetIdResult]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[arrGetResult(1)]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  _58_captchaText'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[strGetIdResult]">
-                            <ui:TypeInto.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c93ad2ab-af66-470f-8da2-0a53058bde3c" InformativeScreenshot="3913ee4cc3f7d5864ed2ead19063e6a4" Selector="&lt;webctrl id='_58_captchaText' tag='INPUT' type='text' /&gt;">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:TypeInto.Target>
-                          </ui:TypeInto>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0dc076b2-b6f9-4e92-9a10-dc495e4c74e7" InformativeScreenshot="1e2a78fc31b60514c47fca55f464d854" Selector="&lt;webctrl tag='BUTTON' /&gt;">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:Click.Target>
-                          </ui:Click>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4893e17a-3180-4091-a00e-c160cb37997d" InformativeScreenshot="21164a6900de04fe4078082c02e9620d" Selector="&lt;webctrl parentid='p_p_id_56_INSTANCE_1TN8LN4zHcvE_' tag='IMG' /&gt;">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:Click.Target>
-                          </ui:Click>
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,297" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Ocorreu erro no Post do 2captcha!&quot;]" />
-                          <ui:CloseApplication DisplayName="Close Application 'chrome.exe Agência'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-                            <ui:CloseApplication.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d83d30f2-0096-4969-b606-7401c95e71ac" InformativeScreenshot="6ac0aed5caa5fbd083f8b6c0385e23e0">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:CloseApplication.Target>
-                          </ui:CloseApplication>
-                        </Sequence>
-                      </If.Else>
-                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strProtocoloParte3]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">2017</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txt_numero_orgao'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[strProtocoloParte1]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e37e05fa-b53e-442f-9cc3-d1cf7ada1ac2" InformativeScreenshot="e37e008b6f9182f34c90fb046fcd339c" Selector="&lt;webctrl id='txt_numero_orgao' tag='INPUT' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txt_numero_seque...'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[strProtocoloParte2]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="69ea12c4-c870-40c2-ae13-a03c6879a678" InformativeScreenshot="3d9f6a0346d0057e4255ab518e92aba3" Selector="&lt;webctrl id='txt_numero_sequencial' tag='INPUT' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txt_numero_ano'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[strProtocoloParte3]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="84f97be0-803a-4bb4-b75b-d457e78d4351" InformativeScreenshot="b9d7bb7949a27d5094727a163e4400f9" Selector="&lt;webctrl id='txt_numero_ano' tag='INPUT' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'IMG'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[imgCaptchaPesquisa]">
+                      <ui:TakeScreenshot.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ff8020cd-ec72-430f-b0f2-4e6ef874d37b" InformativeScreenshot="27a9d806ffedf47d41bffbc726069927" Selector="&lt;webctrl id='iframeCaptcha' tag='IFRAME' /&gt;&lt;webctrl tag='IMG' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TakeScreenshot.Target>
+                    </ui:TakeScreenshot>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strBodyPesquisa]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[imgCaptchaPesquisa.Base64]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Data\Http\2Captcha\2CaptchaHttp.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strKey">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strKey" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strMethod">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strMethod" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strBody">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strBodyPesquisa" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strUrlPost">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strUrlPost" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="in_strUrlGet">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="strUrlGet" />
+                        </InArgument>
+                        <OutArgument x:TypeArguments="x:String" x:Key="out_strCaptchaResolution">
+                          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="strCaptchaResolution" />
+                        </OutArgument>
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtCaptcha'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="[strCaptchaResolution]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dce24611-4566-4a9a-b64d-dba95c6589b2" InformativeScreenshot="c18f0dd8cdcd516e36decfcae6f3ee1d" Selector="&lt;webctrl id='iframeCaptcha' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  btn_pesquisar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3a3ce95-49b4-4ff9-a832-57f216b34fa0" InformativeScreenshot="e102674ee55167277bd07757beff950f" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c3b3cee4-4ac6-496a-a7a5-3b90a3c0db53" InformativeScreenshot="fb519247d4d9c825a1e5458a4ab81d5b" Selector="&lt;webctrl tag='A' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
                   </Sequence>
                 </ActivityAction>
               </ui:BrowserScope.Body>
