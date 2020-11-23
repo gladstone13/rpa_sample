@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_2CaptchaHttpException" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1239,831" sap2010:WorkflowViewState.IdRef="_2CaptchaHttpException_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_2CaptchaHttpException" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1305,831" sap2010:WorkflowViewState.IdRef="_2CaptchaHttpException_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -54,7 +54,7 @@
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Ocorreu erro no Post do 2captcha!&quot;]" />
     <ui:CloseApplication DisplayName="Close Application 'chrome.exe Agência'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
       <ui:CloseApplication.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d83d30f2-0096-4969-b606-7401c95e71ac" InformativeScreenshot="6ac0aed5caa5fbd083f8b6c0385e23e0">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d83d30f2-0096-4969-b606-7401c95e71ac" InformativeScreenshot="d2b7068de8c8a8610c7098c57358d059" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Consulta Processual - ANEEL - Google Chrome' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

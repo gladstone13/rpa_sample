@@ -10,7 +10,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1239,2179</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1239,2139</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_2CaptchaHttp_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -90,7 +90,7 @@
         <OutArgument x:TypeArguments="x:String">[jsonBody]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["{ ""key"": """ &amp; in_strKey &amp; """, ""method"": """ &amp; in_strMethod &amp; """, ""body"": """ &amp; in_strBody &amp; """ }"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["{ ""key"": """ &amp; in_strKey &amp; """, ""method"": """ &amp; in_strMethod &amp; """, ""body"": """ &amp; in_strBody &amp; """, ""regsense"": 1 }"]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" Body="[jsonBody]" BodyFormat="application/json" DisplayName="HTTP Request - Post" EndPoint="[in_strUrlPost]" sap:VirtualizedContainerService.HintSize="1066,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[strResult]" StatusCode="[strStatusCodeResult]" TimeoutMS="6000">

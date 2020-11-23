@@ -3492,9 +3492,9 @@
     "restore": {
       "projectUniqueName": "DataTableRobot",
       "projectName": "DataTableRobot",
-      "projectPath": "C:\\Users\\User\\Documents\\UiPath\\DataTableRobot\\.local",
+      "projectPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\DataTableRobot\\.local",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\UiPath\\DataTableRobot\\.local"
+      "outputPath": "C:\\Users\\User\\Documents\\git\\rpa_sample\\DataTableRobot\\.local"
     },
     "frameworks": {
       "net461": {
